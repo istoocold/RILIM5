@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="category-grid">
+      <div class="category-tile" data-mode="finance">
+        <img src="finance.png" alt="Finance">
+        <span>Finance</span>
+      </div>
+      <div class="category-tile" data-mode="tech">
+        <img src="tech.png" alt="Tech">
+        <span>Technology</span>
+      </div>
+      <div class="category-tile" data-mode="general">
+        <img src="general.png" alt="General">
+        <span>General</span>
+      </div>
+      <div class="category-tile" data-mode="science">
+        <img src="science.png" alt="Science">
+        <span>Science</span>
+      </div>
+      <div class="category-tile" data-mode="medicine">
+        <img src="medical.png" alt="Medicine">
+        <span>Medical</span>
+      </div>
+      <div class="category-tile" data-mode="legal">
+        <img src="legal.png" alt="Legal">
+        <span>Legal</span>
+      </div>
+    </div>
+
+    <div class="question-section">
+      <input type="text" id="question" placeholder="Ask us..." />
+      <button id="askBtn" class="ask-btn">↗</button>
+    </div>
+
+    <button id="summaryBtn" class="action-btn">
+      <span id="summaryText">Explain this</span>
+    </button>
+
+    <div id="loading" class="hidden">
+      <div class="spinner"></div>
+      <p>Thinking...</p>
+    </div>
+
+    <div id="result" class="hidden"></div>
+
+    <div id="error" class="hidden"></div>
+
+    <button id="pdfBtn" class="action-btn pdf-btn hidden">Summary PDF</button>
+
+    <div class="footer">
+      <span>made by </span>
+      <span class="footer-name">@IS too</span>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Read It Like I'm 5",
+  "version": "2.0.0",
+  "description": "Simplify any webpage with AI",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "test.png",
+      "48": "test.png",
+      "128": "test.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "test.png",
+    "48": "test.png",
+    "128": "test.png"
+  }
+}
